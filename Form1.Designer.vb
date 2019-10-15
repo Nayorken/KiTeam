@@ -47,6 +47,7 @@ Partial Class Panel_conteudo
         Me.btn_maximizar = New System.Windows.Forms.PictureBox()
         Me.btn_fechar = New System.Windows.Forms.PictureBox()
         Me.btn_restaurar = New System.Windows.Forms.PictureBox()
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.panel_cabecalho.SuspendLayout()
         Me.Panel_menu.SuspendLayout()
         Me.Panel1.SuspendLayout()
@@ -59,6 +60,7 @@ Partial Class Panel_conteudo
         CType(Me.btn_maximizar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btn_fechar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btn_restaurar, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'panel_cabecalho
@@ -77,6 +79,7 @@ Partial Class Panel_conteudo
         'Panel_menu
         '
         Me.Panel_menu.BackColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.Panel_menu.Controls.Add(Me.PictureBox5)
         Me.Panel_menu.Controls.Add(Me.PictureBox4)
         Me.Panel_menu.Controls.Add(Me.Button5)
         Me.Panel_menu.Controls.Add(Me.Panel6)
@@ -319,6 +322,16 @@ Partial Class Panel_conteudo
         Me.btn_restaurar.TabIndex = 5
         Me.btn_restaurar.TabStop = False
         '
+        'PictureBox5
+        '
+        Me.PictureBox5.Image = Global.KiTeam.My.Resources.Resources.Imagem11
+        Me.PictureBox5.Location = New System.Drawing.Point(72, 289)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.Size = New System.Drawing.Size(50, 50)
+        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox5.TabIndex = 14
+        Me.PictureBox5.TabStop = False
+        '
         'Panel_conteudo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -343,6 +356,7 @@ Partial Class Panel_conteudo
         CType(Me.btn_maximizar, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btn_fechar, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btn_restaurar, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -371,4 +385,5 @@ Partial Class Panel_conteudo
     Friend WithEvents Panel3 As Panel
     Friend WithEvents Button2 As Button
     Friend WithEvents Panel2 As Panel
+    Friend WithEvents PictureBox5 As PictureBox
 End Class
