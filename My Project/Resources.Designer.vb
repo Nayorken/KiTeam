@@ -173,6 +173,16 @@ Namespace My.Resources
         '''<summary>
         '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property labirinto_mikael_e_vinicius() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("labirinto-mikael-e-vinicius", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property Mobile_Menu_Icon() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Mobile-Menu-Icon", resourceCulture)

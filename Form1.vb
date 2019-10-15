@@ -55,7 +55,7 @@
         fh.Show()
     End Sub
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        AbrirFormNoPanel(New labirinto)
+        AbrirFormNoPanel(New labirinto2)
     End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click

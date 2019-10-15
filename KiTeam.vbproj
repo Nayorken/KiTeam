@@ -80,10 +80,10 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="forms\labirinto.Designer.vb">
-      <DependentUpon>labirinto.vb</DependentUpon>
+    <Compile Include="forms\labirinto2.Designer.vb">
+      <DependentUpon>labirinto2.vb</DependentUpon>
     </Compile>
-    <Compile Include="forms\labirinto.vb">
+    <Compile Include="forms\labirinto2.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="forms\ratito.Designer.vb">
@@ -112,8 +112,8 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="forms\labirinto.resx">
-      <DependentUpon>labirinto.vb</DependentUpon>
+    <EmbeddedResource Include="forms\labirinto2.resx">
+      <DependentUpon>labirinto2.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\ratito.resx">
       <DependentUpon>ratito.vb</DependentUpon>
@@ -172,6 +172,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Imagem11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\labirinto-mikael-e-vinicius.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
