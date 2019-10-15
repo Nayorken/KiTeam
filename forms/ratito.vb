@@ -47,6 +47,7 @@
 
         Timer1.Enabled = True
         Timer2.Enabled = True
+        Label2.Text = "0"
     End Sub
 
     'btn parar'
