@@ -25,16 +25,16 @@ Partial Class Panel_conteudo
         Me.components = New System.ComponentModel.Container()
         Me.panel_cabecalho = New System.Windows.Forms.Panel()
         Me.Panel_menu = New System.Windows.Forms.Panel()
-        Me.tm_ocultar_menu = New System.Windows.Forms.Timer(Me.components)
-        Me.tm_mostrar_menu = New System.Windows.Forms.Timer(Me.components)
+        Me.Button5 = New System.Windows.Forms.Button()
+        Me.Panel6 = New System.Windows.Forms.Panel()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Panel_cont = New System.Windows.Forms.Panel()
-        Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.Panel5 = New System.Windows.Forms.Panel()
-        Me.Panel6 = New System.Windows.Forms.Panel()
-        Me.Button5 = New System.Windows.Forms.Button()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.tm_ocultar_menu = New System.Windows.Forms.Timer(Me.components)
+        Me.tm_mostrar_menu = New System.Windows.Forms.Timer(Me.components)
+        Me.Panel_cont = New System.Windows.Forms.Panel()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
@@ -91,11 +91,27 @@ Partial Class Panel_conteudo
         Me.Panel_menu.Size = New System.Drawing.Size(220, 501)
         Me.Panel_menu.TabIndex = 0
         '
-        'tm_ocultar_menu
+        'Button5
         '
+        Me.Button5.FlatAppearance.BorderSize = 0
+        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button5.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button5.ForeColor = System.Drawing.Color.White
+        Me.Button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button5.Location = New System.Drawing.Point(3, 218)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(217, 65)
+        Me.Button5.TabIndex = 12
+        Me.Button5.Text = "Ratito"
+        Me.Button5.UseVisualStyleBackColor = True
         '
-        'tm_mostrar_menu
+        'Panel6
         '
+        Me.Panel6.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(54, Byte), Integer))
+        Me.Panel6.Location = New System.Drawing.Point(0, 224)
+        Me.Panel6.Name = "Panel6"
+        Me.Panel6.Size = New System.Drawing.Size(4, 65)
+        Me.Panel6.TabIndex = 11
         '
         'Panel1
         '
@@ -110,30 +126,6 @@ Partial Class Panel_conteudo
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(4, 65)
         Me.Panel1.TabIndex = 9
-        '
-        'Panel_cont
-        '
-        Me.Panel_cont.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel_cont.Location = New System.Drawing.Point(220, 40)
-        Me.Panel_cont.Name = "Panel_cont"
-        Me.Panel_cont.Size = New System.Drawing.Size(864, 501)
-        Me.Panel_cont.TabIndex = 1
-        '
-        'Panel2
-        '
-        Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(54, Byte), Integer))
-        Me.Panel2.Location = New System.Drawing.Point(-108, 0)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(4, 65)
-        Me.Panel2.TabIndex = 11
-        '
-        'Panel3
-        '
-        Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(54, Byte), Integer))
-        Me.Panel3.Location = New System.Drawing.Point(0, 0)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(4, 65)
-        Me.Panel3.TabIndex = 13
         '
         'Panel4
         '
@@ -152,27 +144,35 @@ Partial Class Panel_conteudo
         Me.Panel5.Size = New System.Drawing.Size(4, 65)
         Me.Panel5.TabIndex = 16
         '
-        'Panel6
+        'Panel3
         '
-        Me.Panel6.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(54, Byte), Integer))
-        Me.Panel6.Location = New System.Drawing.Point(0, 224)
-        Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(4, 65)
-        Me.Panel6.TabIndex = 11
+        Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(54, Byte), Integer))
+        Me.Panel3.Location = New System.Drawing.Point(0, 0)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(4, 65)
+        Me.Panel3.TabIndex = 13
         '
-        'Button5
+        'Panel2
         '
-        Me.Button5.FlatAppearance.BorderSize = 0
-        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button5.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button5.ForeColor = System.Drawing.Color.White
-        Me.Button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button5.Location = New System.Drawing.Point(3, 218)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(217, 65)
-        Me.Button5.TabIndex = 12
-        Me.Button5.Text = "Ratito"
-        Me.Button5.UseVisualStyleBackColor = True
+        Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(54, Byte), Integer))
+        Me.Panel2.Location = New System.Drawing.Point(-108, 0)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(4, 65)
+        Me.Panel2.TabIndex = 11
+        '
+        'tm_ocultar_menu
+        '
+        '
+        'tm_mostrar_menu
+        '
+        '
+        'Panel_cont
+        '
+        Me.Panel_cont.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel_cont.Location = New System.Drawing.Point(220, 40)
+        Me.Panel_cont.Name = "Panel_cont"
+        Me.Panel_cont.Size = New System.Drawing.Size(864, 501)
+        Me.Panel_cont.TabIndex = 1
         '
         'PictureBox4
         '
