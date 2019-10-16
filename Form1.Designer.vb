@@ -47,10 +47,17 @@ Partial Class Panel_conteudo
         Me.btn_maximizar = New System.Windows.Forms.PictureBox()
         Me.btn_fechar = New System.Windows.Forms.PictureBox()
         Me.btn_restaurar = New System.Windows.Forms.PictureBox()
+        Me.Panel7 = New System.Windows.Forms.Panel()
+        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.panel_cabecalho.SuspendLayout()
         Me.Panel_menu.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.Panel4.SuspendLayout()
+        Me.Panel_cont.SuspendLayout()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -59,6 +66,10 @@ Partial Class Panel_conteudo
         CType(Me.btn_maximizar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btn_fechar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btn_restaurar, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel7.SuspendLayout()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'panel_cabecalho
@@ -168,6 +179,7 @@ Partial Class Panel_conteudo
         '
         'Panel_cont
         '
+        Me.Panel_cont.Controls.Add(Me.Panel7)
         Me.Panel_cont.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel_cont.Location = New System.Drawing.Point(220, 40)
         Me.Panel_cont.Name = "Panel_cont"
@@ -319,6 +331,71 @@ Partial Class Panel_conteudo
         Me.btn_restaurar.TabIndex = 5
         Me.btn_restaurar.TabStop = False
         '
+        'Panel7
+        '
+        Me.Panel7.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Panel7.Controls.Add(Me.PictureBox7)
+        Me.Panel7.Controls.Add(Me.PictureBox6)
+        Me.Panel7.Controls.Add(Me.Label2)
+        Me.Panel7.Controls.Add(Me.Label1)
+        Me.Panel7.Controls.Add(Me.PictureBox5)
+        Me.Panel7.Location = New System.Drawing.Point(6, 6)
+        Me.Panel7.Name = "Panel7"
+        Me.Panel7.Size = New System.Drawing.Size(855, 492)
+        Me.Panel7.TabIndex = 16
+        '
+        'PictureBox7
+        '
+        Me.PictureBox7.Image = Global.KiTeam.My.Resources.Resources.Screenshot_2
+        Me.PictureBox7.Location = New System.Drawing.Point(416, 228)
+        Me.PictureBox7.Name = "PictureBox7"
+        Me.PictureBox7.Size = New System.Drawing.Size(428, 159)
+        Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox7.TabIndex = 20
+        Me.PictureBox7.TabStop = False
+        '
+        'PictureBox6
+        '
+        Me.PictureBox6.Image = Global.KiTeam.My.Resources.Resources.Screenshot_3
+        Me.PictureBox6.Location = New System.Drawing.Point(10, 228)
+        Me.PictureBox6.Name = "PictureBox6"
+        Me.PictureBox6.Size = New System.Drawing.Size(400, 159)
+        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox6.TabIndex = 19
+        Me.PictureBox6.TabStop = False
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!)
+        Me.Label2.Location = New System.Drawing.Point(172, 420)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(481, 54)
+        Me.Label2.TabIndex = 18
+        Me.Label2.Text = "Este projeto foi desenvolvido no ambito da disciplina de Programação E" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Sistemas " &
+    "De Informação, desenvolvido pelo aluno Hugo Ferreira." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!)
+        Me.Label1.Location = New System.Drawing.Point(81, 153)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(663, 72)
+        Me.Label1.TabIndex = 17
+        Me.Label1.Text = "Kiteam é uma simples plataforma de jogos offline na qual podemos encontrar" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "os ma" &
+    "is diversos jogos, assim como o jogo do ""labirinto"", o jogo do ""ratito"" etc." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) &
+    ""
+        '
+        'PictureBox5
+        '
+        Me.PictureBox5.Image = Global.KiTeam.My.Resources.Resources.b3367994_f1dc_4075_b0e4_a31d95a4e038_200x200
+        Me.PictureBox5.Location = New System.Drawing.Point(312, -33)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.Size = New System.Drawing.Size(201, 158)
+        Me.PictureBox5.TabIndex = 16
+        Me.PictureBox5.TabStop = False
+        '
         'Panel_conteudo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -335,6 +412,7 @@ Partial Class Panel_conteudo
         Me.Panel_menu.ResumeLayout(False)
         Me.Panel1.ResumeLayout(False)
         Me.Panel4.ResumeLayout(False)
+        Me.Panel_cont.ResumeLayout(False)
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
@@ -343,6 +421,11 @@ Partial Class Panel_conteudo
         CType(Me.btn_maximizar, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btn_fechar, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btn_restaurar, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel7.ResumeLayout(False)
+        Me.Panel7.PerformLayout()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -371,4 +454,10 @@ Partial Class Panel_conteudo
     Friend WithEvents Panel3 As Panel
     Friend WithEvents Button2 As Button
     Friend WithEvents Panel2 As Panel
+    Friend WithEvents Panel7 As Panel
+    Friend WithEvents PictureBox7 As PictureBox
+    Friend WithEvents PictureBox6 As PictureBox
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label1 As Label
+    Friend WithEvents PictureBox5 As PictureBox
 End Class

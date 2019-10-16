@@ -176,5 +176,14 @@
   <ItemGroup>
     <None Include="Resources\labirinto-mikael-e-vinicius.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b3367994-f1dc-4075-b0e4-a31d95a4e038_200x200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
