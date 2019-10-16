@@ -1,4 +1,6 @@
-﻿Public Class Panel_conteudo
+﻿
+Public Class Panel_conteudo
+
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
         If Panel_menu.Width = 220 Then
             tm_ocultar_menu.Enabled = True
@@ -65,4 +67,6 @@
     Private Sub PictureBox4_Click(sender As Object, e As EventArgs) Handles PictureBox4.Click
         AbrirFormNoPanel(New ratito)
     End Sub
+
+
 End Class

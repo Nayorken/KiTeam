@@ -185,5 +185,38 @@
   <ItemGroup>
     <None Include="Resources\Screenshot_2.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nave.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nave1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aviao-disparar-tiros.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bola.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fundo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\234234234.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dmeu_y4526260_01_std.lang.all - Cópia.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dmeu_y4526260_01_std.lang.all.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\on.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\off.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

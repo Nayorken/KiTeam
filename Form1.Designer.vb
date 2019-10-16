@@ -48,11 +48,13 @@ Partial Class Panel_conteudo
         Me.tm_mostrar_menu = New System.Windows.Forms.Timer(Me.components)
         Me.Panel_cont = New System.Windows.Forms.Panel()
         Me.Panel7 = New System.Windows.Forms.Panel()
-        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
+        Me.Panel8 = New System.Windows.Forms.Panel()
         Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.SplitContainer1 = New System.Windows.Forms.SplitContainer()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.panel_cabecalho.SuspendLayout()
         CType(Me.btn_minimizar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btn_maximizar, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -67,9 +69,12 @@ Partial Class Panel_conteudo
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel_cont.SuspendLayout()
         Me.Panel7.SuspendLayout()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel8.SuspendLayout()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SplitContainer1.SuspendLayout()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'panel_cabecalho
@@ -149,7 +154,7 @@ Partial Class Panel_conteudo
         'PictureBox4
         '
         Me.PictureBox4.Image = Global.KiTeam.My.Resources.Resources.Imagem11
-        Me.PictureBox4.Location = New System.Drawing.Point(7, 230)
+        Me.PictureBox4.Location = New System.Drawing.Point(7, 279)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(50, 50)
         Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -163,7 +168,7 @@ Partial Class Panel_conteudo
         Me.Button5.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button5.ForeColor = System.Drawing.Color.White
         Me.Button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button5.Location = New System.Drawing.Point(3, 218)
+        Me.Button5.Location = New System.Drawing.Point(3, 267)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(217, 65)
         Me.Button5.TabIndex = 12
@@ -173,7 +178,7 @@ Partial Class Panel_conteudo
         'Panel6
         '
         Me.Panel6.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(54, Byte), Integer))
-        Me.Panel6.Location = New System.Drawing.Point(0, 224)
+        Me.Panel6.Location = New System.Drawing.Point(0, 273)
         Me.Panel6.Name = "Panel6"
         Me.Panel6.Size = New System.Drawing.Size(4, 65)
         Me.Panel6.TabIndex = 11
@@ -186,7 +191,7 @@ Partial Class Panel_conteudo
         Me.Button1.ForeColor = System.Drawing.Color.White
         Me.Button1.Image = Global.KiTeam.My.Resources.Resources.download1
         Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button1.Location = New System.Drawing.Point(3, 146)
+        Me.Button1.Location = New System.Drawing.Point(3, 167)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(217, 65)
         Me.Button1.TabIndex = 10
@@ -234,7 +239,7 @@ Partial Class Panel_conteudo
         'Panel5
         '
         Me.Panel5.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(54, Byte), Integer))
-        Me.Panel5.Location = New System.Drawing.Point(0, 0)
+        Me.Panel5.Location = New System.Drawing.Point(0, 21)
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(4, 65)
         Me.Panel5.TabIndex = 16
@@ -334,9 +339,9 @@ Partial Class Panel_conteudo
         'Panel7
         '
         Me.Panel7.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Panel7.Controls.Add(Me.PictureBox7)
-        Me.Panel7.Controls.Add(Me.PictureBox6)
+        Me.Panel7.Controls.Add(Me.Panel8)
         Me.Panel7.Controls.Add(Me.Label2)
+        Me.Panel7.Controls.Add(Me.SplitContainer1)
         Me.Panel7.Controls.Add(Me.Label1)
         Me.Panel7.Controls.Add(Me.PictureBox5)
         Me.Panel7.Location = New System.Drawing.Point(6, 6)
@@ -344,42 +349,54 @@ Partial Class Panel_conteudo
         Me.Panel7.Size = New System.Drawing.Size(855, 492)
         Me.Panel7.TabIndex = 16
         '
-        'PictureBox7
+        'Panel8
         '
-        Me.PictureBox7.Image = Global.KiTeam.My.Resources.Resources.Screenshot_2
-        Me.PictureBox7.Location = New System.Drawing.Point(416, 228)
-        Me.PictureBox7.Name = "PictureBox7"
-        Me.PictureBox7.Size = New System.Drawing.Size(428, 159)
-        Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox7.TabIndex = 20
-        Me.PictureBox7.TabStop = False
+        Me.Panel8.Controls.Add(Me.PictureBox7)
+        Me.Panel8.Controls.Add(Me.PictureBox6)
+        Me.Panel8.Location = New System.Drawing.Point(21, 161)
+        Me.Panel8.Name = "Panel8"
+        Me.Panel8.Size = New System.Drawing.Size(791, 282)
+        Me.Panel8.TabIndex = 2
         '
         'PictureBox6
         '
-        Me.PictureBox6.Image = Global.KiTeam.My.Resources.Resources.Screenshot_3
-        Me.PictureBox6.Location = New System.Drawing.Point(10, 228)
+        Me.PictureBox6.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PictureBox6.Location = New System.Drawing.Point(0, 0)
         Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(400, 159)
+        Me.PictureBox6.Size = New System.Drawing.Size(791, 282)
         Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox6.TabIndex = 19
+        Me.PictureBox6.TabIndex = 0
         Me.PictureBox6.TabStop = False
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!)
-        Me.Label2.Location = New System.Drawing.Point(172, 420)
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!)
+        Me.Label2.Location = New System.Drawing.Point(228, 446)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(481, 54)
+        Me.Label2.Size = New System.Drawing.Size(398, 45)
         Me.Label2.TabIndex = 18
         Me.Label2.Text = "Este projeto foi desenvolvido no âmbito da disciplina de Programação E" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Sistemas " &
     "De Informação, desenvolvido pelo aluno Hugo Ferreira." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        '
+        'SplitContainer1
+        '
+        Me.SplitContainer1.Location = New System.Drawing.Point(21, 161)
+        Me.SplitContainer1.Name = "SplitContainer1"
+        Me.SplitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal
+        '
+        'SplitContainer1.Panel1
+        '
+        Me.SplitContainer1.Panel1.Enabled = False
+        Me.SplitContainer1.Size = New System.Drawing.Size(791, 282)
+        Me.SplitContainer1.SplitterDistance = 240
+        Me.SplitContainer1.TabIndex = 19
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!)
-        Me.Label1.Location = New System.Drawing.Point(81, 153)
+        Me.Label1.Location = New System.Drawing.Point(81, 93)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(663, 72)
         Me.Label1.TabIndex = 17
@@ -390,11 +407,21 @@ Partial Class Panel_conteudo
         'PictureBox5
         '
         Me.PictureBox5.Image = Global.KiTeam.My.Resources.Resources.b3367994_f1dc_4075_b0e4_a31d95a4e038_200x200
-        Me.PictureBox5.Location = New System.Drawing.Point(312, -33)
+        Me.PictureBox5.Location = New System.Drawing.Point(312, -56)
         Me.PictureBox5.Name = "PictureBox5"
         Me.PictureBox5.Size = New System.Drawing.Size(201, 158)
         Me.PictureBox5.TabIndex = 16
         Me.PictureBox5.TabStop = False
+        '
+        'PictureBox7
+        '
+        Me.PictureBox7.Image = Global.KiTeam.My.Resources.Resources.image1
+        Me.PictureBox7.Location = New System.Drawing.Point(64, -3)
+        Me.PictureBox7.Name = "PictureBox7"
+        Me.PictureBox7.Size = New System.Drawing.Size(659, 271)
+        Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox7.TabIndex = 14
+        Me.PictureBox7.TabStop = False
         '
         'Panel_conteudo
         '
@@ -423,9 +450,12 @@ Partial Class Panel_conteudo
         Me.Panel_cont.ResumeLayout(False)
         Me.Panel7.ResumeLayout(False)
         Me.Panel7.PerformLayout()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel8.ResumeLayout(False)
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.SplitContainer1.ResumeLayout(False)
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -455,9 +485,11 @@ Partial Class Panel_conteudo
     Friend WithEvents Button2 As Button
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Panel7 As Panel
-    Friend WithEvents PictureBox7 As PictureBox
-    Friend WithEvents PictureBox6 As PictureBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents PictureBox5 As PictureBox
+    Friend WithEvents SplitContainer1 As SplitContainer
+    Friend WithEvents Panel8 As Panel
+    Friend WithEvents PictureBox6 As PictureBox
+    Friend WithEvents PictureBox7 As PictureBox
 End Class
